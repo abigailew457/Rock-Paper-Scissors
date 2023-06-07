@@ -16,6 +16,7 @@ function getComputerChoice() {
 console.log(getComputerChoice())
 
 // Play a single round
-function playRound(playerSelection, computerSelection){
+function playRound(playerSelection, computerSelection) {
+    let outputPlayerSelection = playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1).toLowerCase();
 
 }
