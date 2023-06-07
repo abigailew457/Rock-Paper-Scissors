@@ -14,3 +14,8 @@ function getComputerChoice() {
     } // Applying a clear string to the resutling numbers
 }
 console.log(getComputerChoice())
+
+// Play a single round
+function playRound(playerSelection, computerSelection){
+
+}
