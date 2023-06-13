@@ -4,7 +4,6 @@ function getComputerChoice() {
     let randomChoice = compChoice [Math.floor(Math.random() * compChoice.length)];
     return randomChoice
 }
-console.log(getComputerChoice())
 
 // Play a single round
 function playRound(playerSelection, computerSelection) {
@@ -30,4 +29,5 @@ function playRound(playerSelection, computerSelection) {
 
 const playerSelection = "Rock";
 const computerSelection = getComputerChoice();
-console.log(playerSelection)
+console.log(playerSelection + " - Player")
+console.log(computerSelection + " - Computer")
