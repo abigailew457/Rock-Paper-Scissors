@@ -17,20 +17,20 @@ console.log(getComputerChoice())
 
 // Play a single round
 function playRound(playerSelection, computerSelection) {
-    playerSelection = playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1).toLowerCase();
+    playerSelection = playerSelection.toLowerCase()
 
 
-    if (playerSelection === "Rock" && computerSelection === "Scissors") {
+    if (playerSelection === "rock" && computerSelection === "Scissors") {
         return "You Win! Rock beats Scissors";
-    } else if (playerSelection === "Rock" && computerSelection === "Paper") {
+    } else if (playerSelection === "rock" && computerSelection === "Paper") {
         return "You Lose! Paper beats Rock";
-    } else if (playerSelection === "Paper" && computerSelection === "Rock") {
+    } else if (playerSelection === "paper" && computerSelection === "Rock") {
         return "You Win! Paper beats Rock";
-    } else if (playerSelection === "Paper" && computerSelection === "Scissors") {
+    } else if (playerSelection === "paper" && computerSelection === "Scissors") {
         return "You Lose! Scissors beats Paper";
-    } else if (playerSelection === "Scissors" && computerSelection === "Paper") {
+    } else if (playerSelection === "scissors" && computerSelection === "Paper") {
         return "You Win! Scissors beats Paper";
-    } else if (playerSelection === "Scissors" && computerSelection === "Rock") {
+    } else if (playerSelection === "scissors" && computerSelection === "Rock") {
         return "You Lose! Rock beats Scissors";
     } else {
         return "Draw!"
