@@ -1,17 +1,8 @@
 console.log('Hello World!')
 function getComputerChoice() {
-    let compChoice = ["Rock", "Paper", "Scissors"]; // Establishes computer choice options
-    let randomChoice = Math.floor(Math.random() * compChoice.length) + 1; // Randomizing the chompChoice by creating a random number, multiplying it by the length of the choice, rounding it down, and adding it by 1
-
-    if (randomChoice === 1) {
-        return "Rock";
-    }
-    if (randomChoice === 2) {
-        return "Paper";
-    }
-    if (randomChoice === 3) {
-        return "Scissors";
-    } // Applying a clear string to the resulting numbers
+    let compChoice = ["Rock", "Paper", "Scissors"];
+    let randomChoice = compChoice [Math.floor(Math.random() * compChoice.length)];
+    return randomChoice
 }
 console.log(getComputerChoice())
 
@@ -40,6 +31,3 @@ function playRound(playerSelection, computerSelection) {
 const playerSelection = "Rock";
 const computerSelection = getComputerChoice();
 console.log(playerSelection)
-
-// Returns the wrong statment everytime
-// test c.Selection under each if to see if the computer choice is the problem 
