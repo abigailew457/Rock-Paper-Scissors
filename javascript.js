@@ -32,6 +32,7 @@ function game() {
     const playerSelection = selection;
     const computerSelection = getComputerChoice();
 
+    playRound(playerSelection, computerSelection);
     console.log(playRound(playerSelection, computerSelection));
 }
 
