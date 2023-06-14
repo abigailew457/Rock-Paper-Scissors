@@ -35,7 +35,7 @@ function game() {
 }
 
 
-
+console.log(game())
 
 console.log(playerSelection + " - Player")
 console.log(computerSelection + " - Computer")
