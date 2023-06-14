@@ -29,11 +29,13 @@ function game() {
         return "Draw!"
     }
 }
+    const playerSelection = "Rock";
+    const computerSelection = getComputerChoice();
     return playRound
 }
 
 
-const playerSelection = "Rock";
-const computerSelection = getComputerChoice();
+
+
 console.log(playerSelection + " - Player")
 console.log(computerSelection + " - Computer")
