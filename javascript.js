@@ -6,9 +6,12 @@ function getComputerChoice() {
 }
 
 // Play a single round
+    
+function game() {
+        
+}
 function playRound(playerSelection, computerSelection) {
     playerSelection = playerSelection.toLowerCase()
-
 
     if (playerSelection === "rock" && computerSelection === "Scissors") {
         return "You Win! Rock beats Scissors";
