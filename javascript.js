@@ -33,7 +33,16 @@ function game() {
     const computerSelection = getComputerChoice();
 
     playRound(playerSelection, computerSelection);
-    console.log(playRound(playerSelection, computerSelection));
+    prompt ("Enter your choice.");
+    playRound(playerSelection, computerSelection);
+    prompt ("Enter your choice.");
+    playRound(playerSelection, computerSelection);
+    prompt ("Enter your choice.");
+    playRound(playerSelection, computerSelection);
+    prompt ("Enter your choice.");
+    playRound(playerSelection, computerSelection);
+    prompt ("Enter your choice.");
+    playRound(playerSelection, computerSelection);
 }
 
 
