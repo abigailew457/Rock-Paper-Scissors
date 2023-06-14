@@ -9,8 +9,8 @@ function getComputerChoice() {
     
 function game() {
     let selection = prompt ("Enter your choice.");
-}
-function playRound(playerSelection, computerSelection) {
+    
+    function playRound(playerSelection, computerSelection) {
     playerSelection = playerSelection.toLowerCase()
 
     if (playerSelection === "rock" && computerSelection === "Scissors") {
@@ -29,6 +29,9 @@ function playRound(playerSelection, computerSelection) {
         return "Draw!"
     }
 }
+    return playRound
+}
+
 
 const playerSelection = "Rock";
 const computerSelection = getComputerChoice();
