@@ -6,9 +6,9 @@ function getComputerChoice() {
 }
 
 // Play a single round
-    
+let selection = prompt ("Enter your choice.");    
 function game() {
-        
+    
 }
 function playRound(playerSelection, computerSelection) {
     playerSelection = playerSelection.toLowerCase()
