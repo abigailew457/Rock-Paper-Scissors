@@ -28,23 +28,13 @@ function playRound(playerSelection, computerSelection) {
 
 // Play a 5 match game
 function game() {
-    let selection = prompt ("Enter your choice.");
-    const playerSelection = selection;
-    const computerSelection = getComputerChoice();
-
-    playRound(playerSelection, computerSelection);
-    prompt ("Enter your choice.");
-    playRound(playerSelection, computerSelection);
-    prompt ("Enter your choice.");
-    playRound(playerSelection, computerSelection);
-    prompt ("Enter your choice.");
-    playRound(playerSelection, computerSelection);
-    prompt ("Enter your choice.");
-    playRound(playerSelection, computerSelection);
-    prompt ("Enter your choice.");
-    playRound(playerSelection, computerSelection);
+    
+    for (let i = 0; i < 5; i++) {
+        let selection = prompt("Enter your choice.")
+        const playerSelection = selection
+        const computerSelection = getComputerChoice();
+        console.log(playRound(playerSelection, computerSelection))
+    }
 }
 
-
-console.log(game())
-// loop the game 5 times; 
+game()
