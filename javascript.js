@@ -6,11 +6,7 @@ function getComputerChoice() {
 }
 
 // Play a single round
-    
-function game() {
-    let selection = prompt ("Enter your choice.");
-    
-    function playRound(playerSelection, computerSelection) {
+function playRound(playerSelection, computerSelection) {
     playerSelection = playerSelection.toLowerCase()
 
     if (playerSelection === "rock" && computerSelection === "Scissors") {
@@ -28,10 +24,14 @@ function game() {
     } else {
         alert("Draw!") 
     }
-}
+}    
 
+// Play a 5 match game
+function game() {
+    let selection = prompt ("Enter your choice.");
     const playerSelection = selection;
     const computerSelection = getComputerChoice();
+
     console.log(playRound(playerSelection, computerSelection));
 }
 
