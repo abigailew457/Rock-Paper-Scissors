@@ -46,6 +46,11 @@ function game() {
         const computerSelection = getComputerChoice();
         console.log(playRound(playerSelection, computerSelection))
     }
+    if (playerScore > computerScore) {
+        alert(`Congrats! :)\nYou outsmarted the computer ${playerScore} to ${computerScore}`)
+    } else {
+        alert(`Unlucky...\nYou got outsmarted by a computer ${computerScore} to ${playerScore}`)
+    }
 }
 
 game()
@@ -54,7 +59,3 @@ game()
 // Your answer: ${playerSelection}  Computer's answer: ${computerSelection}
 // You (win/lose)! (selection1) beats (selection2).
 // show running score total
-
-// Add a scoring system
-// Establish a let scoring system for comp. and play. starting at 0
-// add a point to each winner
