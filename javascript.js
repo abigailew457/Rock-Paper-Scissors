@@ -1,4 +1,7 @@
 console.log('Hello World!')
+const playerScore = 0;
+const computerScore = 0; 
+
 function getComputerChoice() {
     let compChoice = ["rock", "paper", "scissors"];
     let randomChoice = compChoice [Math.floor(Math.random() * compChoice.length)];
