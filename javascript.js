@@ -1,6 +1,6 @@
 console.log('Hello World!')
-const playerScore = 0;
-const computerScore = 0; 
+let playerScore = 0;
+let computerScore = 0; 
 
 function getComputerChoice() {
     let compChoice = ["rock", "paper", "scissors"];
@@ -13,19 +13,25 @@ function playRound(playerSelection, computerSelection) {
     playerSelection = playerSelection.toLowerCase()
 
     if (playerSelection === "rock" && computerSelection === "scissors") {
-        alert("You Win! Rock beats Scissors");
+        playerScore++
+        alert(`You Win! Rock beats Scissors\nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
     } else if (playerSelection === "rock" && computerSelection === "paper") {
-        alert("You Lose! Paper beats Rock");
+        computerScore++
+        alert(`You Lose! Paper beats Rock\nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
     } else if (playerSelection === "paper" && computerSelection === "rock") {
-        alert("You Win! Paper beats Rock");
+        playerScore++
+        alert(`You Win! Paper beats Rock\nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
     } else if (playerSelection === "paper" && computerSelection === "scissors") {
-        alert("You Lose! Scissors beats Paper");
+        computerScore++
+        alert(`You Lose! Scissors beats Paper\nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
     } else if (playerSelection === "scissors" && computerSelection === "paper") {
-        alert("You Win! Scissors beats Paper");
+        playerScore++
+        alert(`You Win! Scissors beats Paper\nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
     } else if (playerSelection === "scissors" && computerSelection === "rock") {
-        alert("You Lose! Rock beats Scissors.");
+        computerScore++
+        alert(`You Lose! Rock beats Scissors\nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
     } else if (playerSelection === computerSelection) {
-        alert("Draw!") 
+        alert(`Draw!\nYour score: ${playerScore}\nComputer's score: ${computerScore}`) 
     } else {
         alert("That's not an option you silly goose.")
     }
