@@ -14,24 +14,31 @@ function playRound(playerSelection, computerSelection) {
 
     if (playerSelection === "rock" && computerSelection === "scissors") {
         playerScore++
-        alert(`You Win! Rock beats Scissors\nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
+        alert(`You Win! Rock beats Scissors.
+                \nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
     } else if (playerSelection === "rock" && computerSelection === "paper") {
         computerScore++
-        alert(`You Lose! Paper beats Rock\nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
+        alert(`You Lose! Paper beats Rock
+                \nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
     } else if (playerSelection === "paper" && computerSelection === "rock") {
         playerScore++
-        alert(`You Win! Paper beats Rock\nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
+        alert(`You Win! Paper beats Rock
+                \nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
     } else if (playerSelection === "paper" && computerSelection === "scissors") {
         computerScore++
-        alert(`You Lose! Scissors beats Paper\nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
+        alert(`You Lose! Scissors beats Paper
+                \nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
     } else if (playerSelection === "scissors" && computerSelection === "paper") {
         playerScore++
-        alert(`You Win! Scissors beats Paper\nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
+        alert(`You Win! Scissors beats Paper
+                \nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
     } else if (playerSelection === "scissors" && computerSelection === "rock") {
         computerScore++
-        alert(`You Lose! Rock beats Scissors\nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
+        alert(`You Lose! Rock beats Scissors
+                \nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
     } else if (playerSelection === computerSelection) {
-        alert(`Draw!\nYour score: ${playerScore}\nComputer's score: ${computerScore}`) 
+        alert(`Draw!
+                \nYour score: ${playerScore}\nComputer's score: ${computerScore}`) 
     } else {
         alert("That's not an option you silly goose.")
     }
@@ -47,15 +54,12 @@ function game() {
         console.log(playRound(playerSelection, computerSelection))
     }
     if (playerScore > computerScore) {
-        alert(`Congrats! :)\nYou outsmarted the computer ${playerScore} to ${computerScore}`)
+        alert(`Congrats! :)
+                \nYou outsmarted the computer ${playerScore} to ${computerScore}`)
     } else {
-        alert(`Unlucky...\nYou got outsmarted by a computer ${computerScore} to ${playerScore}`)
+        alert(`Unlucky...
+                \nYou got outsmarted by a computer ${computerScore} to ${playerScore}`)
     }
 }
 
 game()
-
-// edit messages to show; each players choice, result statement
-// Your answer: ${playerSelection}  Computer's answer: ${computerSelection}
-// You (win/lose)! (selection1) beats (selection2).
-// show running score total
