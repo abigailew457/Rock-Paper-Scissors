@@ -1,6 +1,6 @@
 console.log('Hello World!')
 function getComputerChoice() {
-    let compChoice = ["Rock", "Paper", "Scissors"];
+    let compChoice = ["rock", "paper", "scissors"];
     let randomChoice = compChoice [Math.floor(Math.random() * compChoice.length)];
     return randomChoice
 }
@@ -9,20 +9,22 @@ function getComputerChoice() {
 function playRound(playerSelection, computerSelection) {
     playerSelection = playerSelection.toLowerCase()
 
-    if (playerSelection === "rock" && computerSelection === "Scissors") {
+    if (playerSelection === "rock" && computerSelection === "scissors") {
         alert("You Win! Rock beats Scissors");
-    } else if (playerSelection === "rock" && computerSelection === "Paper") {
+    } else if (playerSelection === "rock" && computerSelection === "paper") {
         alert("You Lose! Paper beats Rock");
-    } else if (playerSelection === "paper" && computerSelection === "Rock") {
+    } else if (playerSelection === "paper" && computerSelection === "rock") {
         alert("You Win! Paper beats Rock");
-    } else if (playerSelection === "paper" && computerSelection === "Scissors") {
+    } else if (playerSelection === "paper" && computerSelection === "scissors") {
         alert("You Lose! Scissors beats Paper");
-    } else if (playerSelection === "scissors" && computerSelection === "Paper") {
+    } else if (playerSelection === "scissors" && computerSelection === "paper") {
         alert("You Win! Scissors beats Paper");
-    } else if (playerSelection === "scissors" && computerSelection === "Rock") {
+    } else if (playerSelection === "scissors" && computerSelection === "rock") {
         alert("You Lose! Rock beats Scissors.");
-    } else {
+    } else if (playerSelection === computerSelection) {
         alert("Draw!") 
+    } else {
+        alert("That's not an option you silly goose.")
     }
 }    
 
@@ -38,3 +40,12 @@ function game() {
 }
 
 game()
+
+// edit messages to show; each players choice, result statement
+// Your answer: ${playerSelection}  Computer's answer: ${computerSelection}
+// You (win/lose)! (selection1) beats (selection2).
+// show running score total
+
+// Add a scoring system
+// Establish a let scoring system for comp. and play. starting at 0
+// add a point to each winner
