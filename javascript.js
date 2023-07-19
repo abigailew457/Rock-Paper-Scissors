@@ -47,7 +47,7 @@ function playRound(playerSelection, computerSelection) {
 // Play a 5 match game
 function game() {
     
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 0; i++) {
         let selection = prompt("Enter your choice.")
         const playerSelection = selection
         const computerSelection = getComputerChoice();
@@ -62,9 +62,17 @@ function game() {
     }
 }
 
-game()
 
 // making a UI
 const rock = document.querySelector('#rock');
+rock.addEventListener('click', e => {
+    console.log(playRound('rock', computerSelection));
+});
 const paper = document.querySelector('#paper');
+paper.addEventListener('click', e => {
+    console.log(playRound('paper', computerSelection));
+});
 const scissors = document.querySelector('#scissors');
+scissors.addEventListener('click', e => {
+    console.log(playRound('scissors', computerSelection));
+});
