@@ -43,5 +43,3 @@ function playRound(playerSelection, computerSelection) {
         alert("That's not an option you silly goose.")
     }
 }    
-
-// making a UI
