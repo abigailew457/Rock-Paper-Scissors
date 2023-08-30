@@ -43,3 +43,22 @@ function playRound(playerSelection, computerSelection) {
         alert("That's not an option you silly goose.")
     }
 }    
+
+// make ui 
+
+const container = document.querySelector('#container');
+
+const rock = document.createElement('button');
+rock.setAttribute('id', 'rock');
+console.log(rock);
+container.appendChild(rock); 
+
+const paper = document.createElement('button');
+paper.setAttribute('id', 'paper');
+console.log(paper);
+container.appendChild(paper); 
+
+const scissors = document.createElement('button');
+scissors.setAttribute('id', 'scissors');
+console.log(scissors);
+container.appendChild(scissors); 
