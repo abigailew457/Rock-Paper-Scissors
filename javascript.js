@@ -10,7 +10,6 @@ function getComputerChoice() {
 
 // Play a single round
 function playRound(playerSelection, computerSelection) {
-    playerSelection = playerSelection.toLowerCase()
 
     if (playerSelection === "rock" && computerSelection === "scissors") {
         playerScore++
@@ -68,3 +67,23 @@ scissors.setAttribute('style', 'height: 40px; width: 100px;');
 scissors.textContent = 'Scissors';
 console.log(scissors);
 container.appendChild(scissors); 
+
+const buttons = document.querySelectorAll('button');
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        if (button.id === rock) {
+            alert(playRound());
+            console.log(playRound(rock));
+        } else if (button.id === paper) {
+            alert(playRound(paper));
+            console.log(playRound(paper));
+        } else {
+            button.id === scissors;
+            alert(playRound(scissors));
+            console.log(playRound(scissors));
+        }
+    });
+});
+
+// Doesnt return the correct results
+// need to figure out how to add ids to pSelect
