@@ -71,6 +71,7 @@ scissors.textContent = 'Scissors';
 console.log(scissors);
 container.appendChild(scissors); 
 
+
 rock.addEventListener('click', () => {
     const playerSelection = 'rock';
     return(playRound());
