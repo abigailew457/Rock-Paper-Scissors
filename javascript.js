@@ -86,3 +86,7 @@ buttons.forEach((button) => {
 });
 
 container.setAttribute('style', 'position: fixed; top: 50%; left: 50%;')
+
+const results = document.createElement('div');
+results.setAttribute('id', 'results');
+container.appendChild(results);
