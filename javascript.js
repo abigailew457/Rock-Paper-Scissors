@@ -14,37 +14,40 @@ function playRound(playerSelection, computerSelection) {
 
     if (playerSelection === "rock" && computerSelection === "scissors") {
         playerScore++
-        alert(`You Win! Rock beats Scissors.
-                \nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
+        results.textContent = `You Win! Rock beats Scissors
+                \nYour score: ${playerScore} Computer's score: ${computerScore}`;
     } else if (playerSelection === "rock" && computerSelection === "paper") {
         computerScore++
-        alert(`You Lose! Paper beats Rock
-                \nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
+        results.textContent = `You Lose! Paper beats Rock
+                \nYour score: ${playerScore}\nComputer's score: ${computerScore}`;
     } else if (playerSelection === "paper" && computerSelection === "rock") {
         playerScore++
-        alert(`You Win! Paper beats Rock
-                \nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
+        results.textContent = `You Win! Paper beats Rock
+                \nYour score: ${playerScore}\nComputer's score: ${computerScore}`;
     } else if (playerSelection === "paper" && computerSelection === "scissors") {
         computerScore++
-        alert(`You Lose! Scissors beats Paper
-                \nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
+        results.textContent = `You Lose! Scissors beats Paper
+                \nYour score: ${playerScore}\nComputer's score: ${computerScore}`;
     } else if (playerSelection === "scissors" && computerSelection === "paper") {
         playerScore++
-        alert(`You Win! Scissors beats Paper
-                \nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
+        results.textContent = `You Win! Scissors beats Paper
+                \nYour score: ${playerScore}\nComputer's score: ${computerScore}`;
     } else if (playerSelection === "scissors" && computerSelection === "rock") {
         computerScore++
-        alert(`You Lose! Rock beats Scissors
-                \nYour score: ${playerScore}\nComputer's score: ${computerScore}`);
+        results.textContent = `You Lose! Rock beats Scissors
+                \nYour score: ${playerScore}Computer's score: ${computerScore}`;
     } else if (playerSelection === computerSelection) {
-        alert(`Draw!
-                \nYour score: ${playerScore}\nComputer's score: ${computerScore}`) 
-    } else {
-        alert("That's not an option you silly goose.")
-    }
-
-    console.log(computerSelection)
-    console.log(playerSelection)
+        results.textContent = `Draw!
+                \nYour score: ${playerScore}\nComputer's score: ${computerScore}` 
+    };
+    
+    if (playerScore === 5) {
+        results.textContent = `Congrates! You're smarter then a computer.
+        \nYour score: ${playerScore}\nComputer's score: ${computerScore}`;  
+    } else if (computerScore === 5) {
+        results.textContent = `Yicks! Outsmarted by a generator...
+        \nYour score: ${playerScore}\nComputer's score: ${computerScore}`;
+    };
 }    
 
 // make ui 
@@ -89,6 +92,8 @@ container.setAttribute('style', 'position: fixed; top: 50%; left: 50%;')
 
 const results = document.createElement('div');
 results.setAttribute('id', 'results');
-results.setAttribute('style', 'border: 2px solid pink; height: 80px; width: 296px; display: flex; margin-top: 25px')
+results.setAttribute('style', 'border: 2px solid pink; height: 80px; width: 296px; display: flex; margin-top: 25px');
 console.log(results);
 container.appendChild(results);
+
+//Make game stop when either player reaches 5pts
