@@ -89,4 +89,6 @@ container.setAttribute('style', 'position: fixed; top: 50%; left: 50%;')
 
 const results = document.createElement('div');
 results.setAttribute('id', 'results');
+results.setAttribute('style', 'border: 2px solid pink; height: 80px; width: 296px; display: flex; margin-top: 25px')
+console.log(results);
 container.appendChild(results);
