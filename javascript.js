@@ -84,3 +84,5 @@ buttons.forEach((button) => {
         }
       });
 });
+
+container.setAttribute('style', 'position: fixed; top: 50%; left: 50%;')
