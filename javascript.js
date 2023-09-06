@@ -15,7 +15,7 @@ function playRound(playerSelection, computerSelection) {
     if (playerSelection === "rock" && computerSelection === "scissors") {
         playerScore++
         results.textContent = `You Win! Rock beats Scissors
-                \nYour score: ${playerScore} Computer's score: ${computerScore}`;
+                \nYour score: ${playerScore}\nComputer's score: ${computerScore}`;
     } else if (playerSelection === "rock" && computerSelection === "paper") {
         computerScore++
         results.textContent = `You Lose! Paper beats Rock
@@ -35,7 +35,7 @@ function playRound(playerSelection, computerSelection) {
     } else if (playerSelection === "scissors" && computerSelection === "rock") {
         computerScore++
         results.textContent = `You Lose! Rock beats Scissors
-                \nYour score: ${playerScore}Computer's score: ${computerScore}`;
+                \nYour score: ${playerScore}\nComputer's score: ${computerScore}`;
     } else if (playerSelection === computerSelection) {
         results.textContent = `Draw!
                 \nYour score: ${playerScore}\nComputer's score: ${computerScore}` 
