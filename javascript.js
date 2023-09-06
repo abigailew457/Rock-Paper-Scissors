@@ -43,10 +43,14 @@ function playRound(playerSelection, computerSelection) {
     
     if (playerScore === 5) {
         results.textContent = `Congrates! You're smarter then a computer.
-        \nYour score: ${playerScore}\nComputer's score: ${computerScore}`;  
+        \nYour score: ${playerScore}\nComputer's score: ${computerScore}`;
+        playerScore = 0;
+        computerScore = 0;  
     } else if (computerScore === 5) {
         results.textContent = `Yicks! Outsmarted by a generator...
         \nYour score: ${playerScore}\nComputer's score: ${computerScore}`;
+        playerScore = 0;
+        computerScore = 0;
     };
 }    
 
@@ -95,5 +99,3 @@ results.setAttribute('id', 'results');
 results.setAttribute('style', 'border: 2px solid pink; height: 80px; width: 296px; display: flex; margin-top: 25px');
 console.log(results);
 container.appendChild(results);
-
-//Make game stop when either player reaches 5pts
